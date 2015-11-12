@@ -9,6 +9,10 @@ html {
 $brand_green: #77ad41;
 $brand_grey: #7a7f82;
 
+ul li {
+  list-style-type: none;
+}
+
 .accordion {
   flex-direction: column;
   width: 500px;
@@ -27,6 +31,22 @@ $brand_grey: #7a7f82;
   background: $brand_grey;
 }
 
+.fa {
+  padding: 8px;
+}
+
+.accordion__side-bubble {
+  float: right;
+  padding: 8px;
+  margin-right: 15px;
+  border: none;
+  border-radius: 50%;
+  background: darken($brand_grey, 20%);
+}
+
+
+
+// SUBLISTS //
 .accordion__sublist {
   visibility: hidden;
   padding: 0;
