@@ -9,7 +9,7 @@ $brand_white: #d5dfd8;
 $brand_green: #77ad41;
 $brand_grey: #7a7f82;
 
-.accordion__list-items {
+.accordion__drop-down {
   list-style-type: none;
   padding-left: 0;
 }
@@ -53,9 +53,10 @@ $brand_grey: #7a7f82;
 
 
 // SUBLISTS //
-.accordion__sublist {
+.accordion__bar-list {
   flex: 1;
   height: 45px;
   width: 100%;
   padding-left: 0;
+  list-style-type: none;
 }
