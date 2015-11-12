@@ -1,0 +1,34 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+$brand_green: #77ad41;
+$brand_grey: #7a7f82;
+
+.accordion {
+  flex-direction: column;
+  width: 500px;
+  border: 2px $brand_grey solid;
+  margin: auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+// HEADER ROWS //
+.accordion__bar {
+  flex: 1;
+  height: 45px;
+  width: 100%;
+  color: #eee;
+  background: $brand_grey;
+}
+
+.accordion__sublist {
+  visibility: hidden;
+  padding: 0;
+  list-style-type: none;
+}
