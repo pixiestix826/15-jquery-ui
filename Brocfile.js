@@ -11,4 +11,18 @@ var stylePaths = [
 
 var styles = new Sass(stylePaths, 'app.scss', 'app.css');
 
+var scripts = Babel('src', {
+  browserPolyfill: true,
+  stage: 0,
+  moduleIds: true,
+  moudles: 'amd',
+});
+
+scripts = Concat(scripts, {
+  inputFiles: [
+    '**/*.js',
+  ],
+  outputFile: '/app.js',
+});
+
 module.exports = new Merge(['public', styles, 'bower_components/font-awesome/fonts'], {overwrite: true});

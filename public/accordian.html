@@ -15,15 +15,15 @@
     <h2 class="accordion__bar"><i class="fa fa-inbox"></i> My Files
       <span class="accordion__side-bubble">495</span></h2>
     <ul class="accordion__list-items">
-     <li><h2 class="accordion__sublist">01 Dropbox</h2>
+     <li><p class="accordion__sublist">01</p><h2 class="accordion__sublist-title"> Dropbox</h2>
        <span class="accordion__side-bubble">42</span></li>
-     <li><h2 class="accordion__sublist">02 Skydrive</h2>
+     <li><p class="accordion__sublist">02</p><h2 class="accordion__sublist-title"> Skydrive</h2>
        <span class="accordion__side-bubble">87</span></li>
-     <li><h2 class="accordion__sublist">03 FTP Server</h2>
+     <li><p class="accordion__sublist">03</p><h2 class="accordion__sublist-title"> FTP Server</h2>
        <span class="accordion__side-bubble">366</span></li>
-     <li><h2 class="accordion__sublist">04 Dropbox</h2>
+     <li><p class="accordion__sublist">04</p><h2 class="accordion__sublist-title"> Dropbox</h2>
        <span class="accordion__side-bubble">42</span></li>
-     <li><h2 class="accordion__sublist">05 Skydrive</h2>
+     <li><p class="accordion__sublist">05</p><h2 class="accordion__sublist-title"> Skydrive</h2>
        <span class="accordion__side-bubble">87</span></li>
    </ul>
   </li>
@@ -31,13 +31,13 @@
     <h2 class="accordion__bar"><i class="fa fa-envelope"></i> Mail
       <span class="accordion__side-bubble">126</span></h2>
     <ul class="accordion__list-items">
-     <li><h2 class="accordion__sublist">01 Sarah</h2>
+     <li><p class="accordion__sublist">01</p><h2 class="accordion__sublist-title"> Sarah</h2>
        <span class="accordion__side-bubble">2</span></li>
-     <li><h2 class="accordion__sublist">02 Mary</h2>
+     <li><p class="accordion__sublist">02</p><h2 class="accordion__sublist-title"> Mary</h2>
        <span class="accordion__side-bubble">4</span></li>
-     <li><h2 class="accordion__sublist">03 Jane</h2>
+     <li><p class="accordion__sublist">03</p><h2 class="accordion__sublist-title"> Jane</h2>
        <span class="accordion__side-bubble">6</span></li>
-     <li><h2 class="accordion__sublist">04 Paul</h2>
+     <li><p class="accordion__sublist">04</p><h2 class="accordion__sublist-title"> Paul</h2>
        <span class="accordion__side-bubble">8</span></li>
    </ul>
   </li>
@@ -45,22 +45,30 @@
     <h2 class="accordion__bar"><i class="fa fa-cloud-upload"></i> Cloud
       <span class="accordion__side-bubble">258</span></h2>
     <ul class="accordion__list-items">
-     <li><h2 class="accordion__sublist">01 Connect</h2>
+     <li><p class="accordion__sublist">01</p><h2 class="accordion__sublist-title"> Connect</h2>
        <span class="accordion__side-bubble">12</span></li>
-     <li><h2 class="accordion__sublist">02 Profiles</h2>
+     <li><p class="accordion__sublist">02</p><h2 class="accordion__sublist-title"> Profiles</h2>
        <span class="accordion__side-bubble">19</span></li>
-     <li><h2 class="accordion__sublist">03 Options</h2>
+     <li><p class="accordion__sublist">03</p><h2 class="accordion__sublist-title"> Options</h2>
        <span class="accordion__side-bubble">27</span></li>
-     <li><h2 class="accordion__sublist">04 Connect</h2>
+     <li><p class="accordion__sublist">04</p><h2 class="accordion__sublist-title"> Connect</h2>
        <span class="accordion__side-bubble">12</span></li>
-     <li><h2 class="accordion__sublist">05 Profiles</h2>
+     <li><p class="accordion__sublist">05</p><h2 class="accordion__sublist-title"> Profiles</h2>
        <span class="accordion__side-bubble">19</span></li>
-     <li><h2 class="accordion__sublist">06 Options</h2>
+     <li><p class="accordion__sublist">06</p><h2 class="accordion__sublist-title"> Options</h2>
        <span class="accordion__side-bubble">27</span></li>
    </ul>
   </li>
   <li class="accordion__drop-down">
     <h2 class="accordion__bar"><i class="fa fa-sign-out"></i> Sign Out</h2>
 </ul>
+
+<script src="https://cdnjs.cloudfare.com/ajax/libs/require.js/2.1.20/require.js"></script>
+<script src="app.js"></script>
+<script>
+  require(['accordion'], function(accordion) {
+    accordion();
+  });
+</script>
 </body>
 </html>
