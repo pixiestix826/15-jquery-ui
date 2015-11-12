@@ -5,12 +5,13 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
+$brand_white: #d5dfd8;
 $brand_green: #77ad41;
 $brand_grey: #7a7f82;
 
-ul li {
+.accordion__list-items {
   list-style-type: none;
+  padding-left: 0;
 }
 
 .accordion {
@@ -26,27 +27,35 @@ ul li {
   flex: 1;
   height: 45px;
   width: 100%;
-  color: #eee;
+  color: $brand_white;
   background: $brand_grey;
+}
+.accordion__bar:hover {
+  background: $brand_green;
+  color: darken($brand_grey, 20%);
 }
 
 .fa {
   padding: 8px;
 }
 
-.accordion__side-bubble {
+
+.accordion__bar .accordion__side-bubble {
   float: right;
   padding: 4px;
   margin: 4px 15px 0 0;
   border: none;
   border-radius: 20em/18em;
   background: darken($brand_grey, 20%);
+  color: $brand_white;
 }
 
 
 
 // SUBLISTS //
 .accordion__sublist {
-  visibility: hidden;
-  padding: 0;
+  flex: 1;
+  height: 45px;
+  width: 100%;
+  padding-left: 0;
 }
