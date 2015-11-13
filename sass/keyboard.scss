@@ -5,3 +5,46 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+.keyboard-interface {
+  width: 800px;
+  height: 600px;
+  border: 1px black solid;
+  margin: auto;
+  background: red;
+}
+.text-box {
+  flex: 1;
+  height: 18em;
+  margin: 0.5em;
+  background: orange;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  height: 18em;
+  bottom: 100%;
+  margin: 0.5em;
+  font-family: 'Varela', sans-serif;
+  background: yellow;
+}
+.keyboard-keys {
+  display: flex;
+  list-style-type: none;
+  text-align: center;
+  margin: 0.3rem;
+  padding-left: 0;
+  background: purple;
+}
+.keys {
+  flex: 1;
+  height: 3rem;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1em;
+  background: pink;
+  border: 1px black solid;
+  border-radius: 20%;
+  margin: 1px;
+}
