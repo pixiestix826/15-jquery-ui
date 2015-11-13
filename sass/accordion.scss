@@ -48,7 +48,7 @@ $brand_dark_grey: #3a3b3c;
   border: 1px darken($brand_grey, 20%) solid;
   background-image:
     linear-gradient(
-      $brand_dark_grey, $brand_grey
+      $brand_dark_grey, $brand_light_grey
     );
 }
 
