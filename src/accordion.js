@@ -10,5 +10,4 @@ export default function() {
 $(`.accordion__bar`).click(function() {
   $(`.accordion__bar-ul`).slideUp();
   $(this).next(`.accordion__bar-list`).slideToggle;
-  return false;
 });
