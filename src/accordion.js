@@ -1,8 +1,8 @@
-// export default function() {
-//   var bar = $('accordion__bar');
-//   var list = $('accordion__bar-ul');
-//
-//   bar.on('click', function() {
-//     list.slideToggle(2000);
-//   });
-// }
+export default function() {
+  var bar = $('accordion__bar');
+  var list = $('accordion__bar-ul');
+
+  bar.on('click', function() {
+    $(this).next(list).slideToggle();
+  });
+}
