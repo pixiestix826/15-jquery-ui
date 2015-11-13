@@ -10,13 +10,14 @@ html {
   width: 900px;
   border: 1px black solid;
   margin: auto;
-  background: lightgrey;
+  background: #e1e8ed;
 }
-.text-box {
-  flex: 1;
-  height: 18rem;
+textarea {
+  width: 98%;
+  height: 20rem;
   margin: 0.5rem;
   background: white;
+  border-radius: 1%;
 }
 
 .keyboard {
@@ -26,7 +27,7 @@ html {
   bottom: 100%;
   margin: 0.5rem;
   font-family: 'Varela', sans-serif;
-  background: lightgrey;
+  background: #e1e8ed;
 }
 .keyboard-keys {
   display: flex;
@@ -34,10 +35,10 @@ html {
   text-align: center;
   margin: 0.3rem;
   padding-left: 0;
-  background: lightgrey;
+  background: #e1e8ed;
 }
-.keys, .keys__lg,
-  .keys__spacer {
+.letter, .symbol,
+.keys__lg, .keys__spacer {
   flex: 1;
   height: 3.2rem;
   text-align: center;
