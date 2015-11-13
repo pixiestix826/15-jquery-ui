@@ -1,5 +1,7 @@
 var Merge = require('broccoli-merge-trees');
 var Sass = require('broccoli-sass');
+var Babel = require('broccoli-babel-transpiler');
+var Concat = require('broccoli-concat');
 
 var stylePaths = [
   'sass',
