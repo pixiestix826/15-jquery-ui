@@ -31,22 +31,22 @@ $brand_light_grey: #d0d7d1;
 
 .accordion__bar, .accordion__bar-list {
   display: flex;
-  padding: 5px;
   align-items: center;
   margin: 0;
 }
 
 // HEADER ROWS //
-.accordion__bar {
+.accordion__bar-title, .bar-title {
   flex: 1;
-  height: 45px;
+}
+.accordion__bar {
+  height: 40px;
   margin: 0;
-  padding: 10px 0;
   color: $brand_white;
   background: $brand_grey;
   border: 2px darken($brand_grey, 20%) solid;
-
 }
+
 .accordion__bar:hover {
   background: $brand_green;
   color: darken($brand_grey, 20%);
@@ -58,9 +58,8 @@ $brand_light_grey: #d0d7d1;
 }
 
 .accordion__side-bubble {
-  // float: right;
   padding: 4px 10px;
-  margin: 4px 15px 0 0;
+  margin-right: 30px;
   border: none;
   border-radius: 20em/18em;
   background: darken($brand_grey, 20%);
@@ -70,12 +69,11 @@ $brand_light_grey: #d0d7d1;
   font-size: 20px;
 }
 
-
-
 // SUBLISTS //
 .accordion__bar-list {
+  // display: none;
   width: 100%;
-  height: 45px;
+  height: 40px;
   padding: 5px;
   list-style-type: none;
   border: 1px $brand_light_grey solid;
