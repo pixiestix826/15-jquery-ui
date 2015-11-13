@@ -7,27 +7,26 @@ html {
 }
 
 .keyboard-interface {
-  width: 800px;
-  height: 600px;
+  width: 900px;
   border: 1px black solid;
   margin: auto;
-  background: red;
+  background: lightgrey;
 }
 .text-box {
   flex: 1;
-  height: 18em;
-  margin: 0.5em;
-  background: orange;
+  height: 18rem;
+  margin: 0.5rem;
+  background: white;
 }
 
 .keyboard {
   display: flex;
   flex-direction: column;
-  height: 18em;
+  height: 20em;
   bottom: 100%;
-  margin: 0.5em;
+  margin: 0.5rem;
   font-family: 'Varela', sans-serif;
-  background: yellow;
+  background: lightgrey;
 }
 .keyboard-keys {
   display: flex;
@@ -35,16 +34,25 @@ html {
   text-align: center;
   margin: 0.3rem;
   padding-left: 0;
-  background: purple;
+  background: lightgrey;
 }
-.keys {
+.keys, .keys__lg,
+  .keys__spacer {
   flex: 1;
-  height: 3rem;
+  height: 3.2rem;
   text-align: center;
-  font-size: 1.5em;
-  line-height: 1em;
-  background: pink;
-  border: 1px black solid;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  background: white;
+  border: 1px;
   border-radius: 20%;
-  margin: 1px;
+  margin: 0 0.1rem;
+}
+.keys__lg {
+  flex: 2;
+}
+.keys__spacer {
+  height: 4rem;
+  border-radius: 10%;
+  line-height: 3.5rem;
 }
