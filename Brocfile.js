@@ -22,7 +22,7 @@ var scripts = Babel('src', {
   browserPolyfill: true,
   stage: 0,
   moduleIds: true,
-  moudles: 'amd',
+  modules: 'amd',
 });
 
 scripts = Concat(scripts, {

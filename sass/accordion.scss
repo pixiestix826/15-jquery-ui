@@ -70,8 +70,10 @@ $brand_light_grey: #d0d7d1;
 }
 
 // SUBLISTS //
-.accordion__bar-list {
+.accordion__bar-ul {
   display: none;
+}
+.accordion__bar-list {
   width: 100%;
   height: 40px;
   padding: 5px;
