@@ -1,7 +1,7 @@
 $(function() {
   var $write = $(`.write`),
-      // shift = false
-      // capslock = false
+      shift = false,
+      capslock = false;
 
   $(`.keyboard-keys li`).click(function() {
     var $this = $(this),
