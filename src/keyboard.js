@@ -3,7 +3,7 @@ $(function() {
       shift = false,
       capslock = false,
 
-$(`.keyboard-keys li`).click(function() {
+ $ (`.keyboard-keys li`).click(function() {
     var $this = $(this),
         character = $this.html(); // If it's a lowercase letter, nothing happens to this variable
         //Shift keyboard-keys
