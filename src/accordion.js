@@ -3,12 +3,9 @@ export default function() {
   var list = $(`.accordion__bar-list`);
 
   bar.on('click', function() {
-    $(this).next(list).slideToggle();
+    $(`.accordion__bar-ul`).slideUp();
+    $(this).next(list).slideDown();
+
+    ev.preventDefault();
   });
 };
-
-$(`.accordion__bar`).click(function() {
-  $(`.accordion__bar-ul`).slideUp();
-  $(this).next(`.accordion__bar-list`).slideToggle;
-  return false;
-});
