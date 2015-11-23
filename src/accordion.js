@@ -3,8 +3,7 @@ export default function() {
   var list = $(`.accordion__bar-list`);
 
   bar.on('click', function() {
-    $(`.accordion__bar-ul`).slideUp();
-    $(this).next(list).slideDown();
+    $(this).siblings().slideToggle();
 
     ev.preventDefault();
   });
