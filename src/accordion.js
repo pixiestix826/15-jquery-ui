@@ -4,7 +4,7 @@ export default function() {
 
   bar.on('click', function(ev) {
     $(this).siblings(list).slideToggle();
-    $(this).next.parent(bar).slideUp();
+    $(this).find(parent).slideUp();
     ev.preventDefault();
   });
 }
