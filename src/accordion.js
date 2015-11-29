@@ -3,8 +3,9 @@ export default function() {
   var list = $(`.accordion__bar-list`);
 
   bar.on('click', function(ev) {
-    $(this).siblings(list).slideToggle();
-    $(this).find(parent).slideUp();
+    var siblings = list.nextSibling;
+    $(this).siblings().slideToggle();
+    $(this).find(siblings).slideUp();
     ev.preventDefault();
   });
 }
