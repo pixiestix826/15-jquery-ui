@@ -1,11 +1,11 @@
 export default function() {
   var bar = $(`.accordion__bar`);
-  var list = $(`.accordion__bar-list`);
+
+  // var list = $(`.accordion__drop-down`);
 
   bar.on('click', function(ev) {
-    var siblings = list.nextSibling;
     $(this).siblings().slideToggle();
-    $(this).find(siblings).slideUp();
+    $(this).find(parent).slideUp();
     ev.preventDefault();
   });
 }
